@@ -1,14 +1,14 @@
 # RE1 - Gifted
 
 ## Challenge
-> We've been given a binary, that asks us for the flag...
+[gifted](gifted)
 
 ## Solution
-> This was a simple RE challenge, we started running the 'strings' command against the binary and immediately found the flag:
+This was a simple RE challenge, we started running the 'strings' command against the binary and immediately found the flag:
 
 ![Flag from strings](https://github.com/R3dCr3sc3nt/AlexCTF/blob/master/RE1-Gifted/strings.png)
 
-> If we disassemble the binary in radare2 we also see the flag being pushed as a string onto the stack just before the call to strcmp:
+If we disassemble the binary in radare2 we also see the flag being pushed as a string onto the stack just before the call to strcmp:
 
 ![Flag from radare2](https://github.com/R3dCr3sc3nt/AlexCTF/blob/master/RE1-Gifted/radare.png)
 
