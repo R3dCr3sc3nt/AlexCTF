@@ -42,7 +42,7 @@ Printing this output gave me an output resembling morse code
 ```
 .- .-.. . -..- -.-. - ..-. - .... .---- ..... --- .---- ... --- ..... ..- .--. ...-- .-. --- ..... . -.-. .-. ...-- - --- - -..- -
 ```
-I couldn't find a library to decode morse code so I used built the decoded string from a python dictionary
+I couldn't find a library to decode morse code so I built the decoded string from a python dictionary
 ```
 CODE = {'.-': 'A',    '-...': 'B',  '-.-.': 'C',
         '-..': 'D',   '.': 'E',     '..-.': 'F',
