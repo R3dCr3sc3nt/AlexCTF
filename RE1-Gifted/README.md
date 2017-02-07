@@ -4,22 +4,26 @@
 [gifted](gifted)
 
 ## Solution
-This was a simple RE challenge, we started running the 'strings' command against the binary and immediately found the flag.
-```
-**snip**
+The challenge is simply a link to an ELF binary. After downloading the binary, run `strings` to look for anything interesting.
 
+```
+$ strings gifted
+/lib/ld-linux.so.2
+libc.so.6
+_IO_stdin_used
+exit
+...
 [^_]
 AlexCTF{Y0u_h4v3_45t0n15h1ng_futur3_1n_r3v3r5ing}
 Enter the flag:
 You got it right dude!
 Try harder!
 ;*2$"
-
-**snip**
+...
 ```
 
-If we disassemble the binary in radare2 (https://github.com/radare/radare2) we also see the flag being pushed as a string onto the stack just before the call to strcmp.
+The flag is quickly found a plaintext string in the binary. For further investigation, I disassembled the binary in [radare2](https://github.com/radare/radare2). The flag being pushed as a string onto the stack just before the call to `strcmp`.
 
 ![Flag from radare2](https://github.com/R3dCr3sc3nt/AlexCTF/blob/master/RE1-Gifted/radare.png)
 
-The flag is **AlexCTF{Y0u_h4v3_45t0n15h1ng_futur3_1n_r3v3r5ing}**
+The flag is **AlexCTF{Y0u_h4v3_45t0n15h1ng_futur3_1n_r3v3r5ing}**.
