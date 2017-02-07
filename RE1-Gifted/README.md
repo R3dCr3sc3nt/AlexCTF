@@ -7,6 +7,7 @@
 This was a simple RE challenge, we started running the 'strings' command against the binary and immediately found the flag.
 ```
 **snip**
+
 [^_]
 AlexCTF{Y0u_h4v3_45t0n15h1ng_futur3_1n_r3v3r5ing}
 Enter the flag:
