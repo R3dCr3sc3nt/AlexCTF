@@ -8,7 +8,7 @@
 [zero_one](zero_one)
 
 ## Solution
-The zero_one is a text file containing patterns of "ZERO" and "ONE". I figured this must be converted to a binary representation so I wrote a small python script to do this. (I will show snippets of the script, the libraries are used later in the write-up)
+The zero_one is a text file containing patterns of "ZERO" and "ONE". I figured this must be converted into a binary representation so I wrote a small python script to do this (I will show snippets of the script, the libraries are used later in the write-up).
 
 ```
 #!/usr/bin/python2.7
@@ -25,7 +25,7 @@ for w in dataArr:
   if "ONE" in w:
     binaryBuffer += "1"
 ```
-I converted the buffer string to integer and used the unhexlify() function in the binascii library to return me the ASCII plaintext.
+I converted the buffer string to integer and used the unhexlify() function in the binascii library to return the ASCII plaintext.
 ```
 n = int(binaryBuffer, 2)
 binDecoded = binascii.unhexlify('%x' % n)
@@ -34,15 +34,15 @@ Printing the output gave me a base64 encoded string.
 ```
 Li0gLi0uLiAuIC0uLi0gLS4tLiAtIC4uLS4gLSAuLi4uIC4tLS0tIC4uLi4uIC0tLSAuLS0tLSAuLi4gLS0tIC4uLi4uIC4uLSAuLS0uIC4uLi0tIC4tLiAtLS0gLi4uLi4gLiAtLi0uIC4tLiAuLi4tLSAtIC0tLSAtIC0uLi0gLQ==
 ```
-Using the base64 library I decoded the base64 string
+Using the base64 library I decoded the base64 string.
 ```
 base64Decoded = base64.b64decode(binDecoded)
 ```
-Printing this output gave me an output resembling morse code
+Printing this output gave me an output resembling morse code.
 ```
 .- .-.. . -..- -.-. - ..-. - .... .---- ..... --- .---- ... --- ..... ..- .--. ...-- .-. --- ..... . -.-. .-. ...-- - --- - -..- -
 ```
-I couldn't find a library to decode morse code so I built the decoded string from a python dictionary
+I couldn't find a library to decode morse code so I built the decoded string from a python dictionary.
 ```
 CODE = {'.-': 'A',    '-...': 'B',  '-.-.': 'C',
         '-..': 'D',   '.': 'E',     '..-.': 'F',
@@ -81,7 +81,7 @@ for l in morseList[7:]:
 
 print "The flag is: " + alexCTF + "{" + flag + "}"
 ```
-And the output and solution
+And the output and solution.
 ```
 The flag is: alexctf{th15_1s_5up3r_5ecr3t_txt}
 ```
