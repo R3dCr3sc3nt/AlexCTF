@@ -20,7 +20,8 @@ cvqAeqacLtqazEigwiXobxrCrtuiTzahfFreqc{bnjrKwgk83kgd43j85ePgb_e_rwqr7fvbmHjklo3t
 ...
 ```
 
-Judging by the curly brackets in one of the lines, I figured the flag might be extracted from this. Upon closer inspection it becomes clear that every fifth character starting from the first A spells ALEXCTF, perhaps this correlation continues throughout? I wrote a python script to check.
+Judging by the curly brackets in one of the lines, I figured the flag might be extracted from this. 
+Upon closer inspection it becomes clear that every fifth character starting from the first A spells ALEXCTF, perhaps this correlation continues throughout? I wrote a python script to check.
 
 ```
 #!/usr/bin/python2.7
