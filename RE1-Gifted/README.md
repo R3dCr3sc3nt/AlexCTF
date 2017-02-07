@@ -22,7 +22,7 @@ Try harder!
 ...
 ```
 
-The flag is quickly found a plaintext string in the binary. For further investigation, I disassembled the binary in [radare2](https://github.com/radare/radare2). The flag being pushed as a string onto the stack just before the call to `strcmp`.
+The flag is quickly found as a plaintext string in the binary. For further investigation, I disassembled the binary in [radare2](https://github.com/radare/radare2). The flag is being pushed as a string onto the stack just before the call to `strcmp`.
 
 ![Flag from radare2](https://github.com/R3dCr3sc3nt/AlexCTF/blob/master/RE1-Gifted/radare.png)
 
