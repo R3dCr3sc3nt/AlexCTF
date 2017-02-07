@@ -4,7 +4,7 @@
 [gifted](gifted)
 
 ## Solution
-The challenge is simply a link to an ELF binary. After downloading the binary, run `strings` to look for anything interesting.
+The challenge is simply a link to an ELF binary. After downloading the binary, I ran `strings` to look for anything interesting.
 
 ```
 $ strings gifted
