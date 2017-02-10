@@ -1,7 +1,7 @@
 # RE1 - Gifted
 
 ## Challenge
-[gifted](gifted)
+> [gifted](gifted)
 
 ## Solution
 The challenge is simply a link to an ELF binary. After downloading the binary, I ran `strings` to look for anything interesting.

@@ -1,4 +1,4 @@
-## Challenge 
+## Challenge
 > Doesn't our logo look cool?
 
 ## Solution
@@ -7,6 +7,4 @@ I took a closer look at the logo of AlexCTF on the front page.
 The flag is hidden in plain sight.
 It would be possible to use a python script or even sed to extract the flag but I opted to extract them by hand.
 
-The flag is **ALEXCTF{0UR_L0G0_R0CKS}.**
-
-
+The flag is **ALEXCTF{0UR_L0G0_R0CKS}**.

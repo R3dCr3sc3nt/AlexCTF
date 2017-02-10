@@ -2,11 +2,12 @@
 
 ## Challenge
 > It is well known that computers can do tedious math faster than humans.
+
 > nc 195.154.53.62 1337
 
 ## Solution
-Upon connecting to the supplied IP and port I was greeted with the following message.
 ```
+$ nc 195.154.53.62 1337
                 __________
          ______/ ________ \______
        _/      ____________      \_
@@ -31,8 +32,9 @@ Please prove you are a bot
 Question  1 :
 50489238639188063698070072981610 * 1364107478925961178712787264169 =
 ```
-I reconnected a few times to confirm that the server handed out random equations to be solved, I also solved one manually 
-and was prompted with a new one. I wrote a python script to automatize the process.
+
+I reconnected a few times to confirm that the server handed out random equations to be solved. After solving one manually, I was prompted with a new math problem. At this point, I wrote a python script to automate the process.
+
 ```
 #!/usr/bin/python2.7
 import socket
@@ -62,7 +64,9 @@ while True:
         print data
         break
 ```
-Running the script gave me back the flag after a few seconds and 500 math equations solved.
+
+Running the script returns the flag after a few seconds.
+
 ```
 Solving equation...
 77570593763924035994006787070091 * 156048715378978225422935000952364

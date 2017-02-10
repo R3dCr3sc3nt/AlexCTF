@@ -1,10 +1,11 @@
 # Fore1: Hit the core
 
 ## Challenge
-[fore1.core](fore1.core)
+> [fore1.core](fore1.core)
 
 ## Solution
-Running the 'strings' command against the file gave me a bunch of output but one line in particular stands out.
+Running the 'strings' command against the downloaded file gives a bunch of random-looking output, but one line in particular stands out.
+
 ```
 $ strings fore1.core
 CORE
@@ -20,7 +21,7 @@ cvqAeqacLtqazEigwiXobxrCrtuiTzahfFreqc{bnjrKwgk83kgd43j85ePgb_e_rwqr7fvbmHjklo3t
 ...
 ```
 
-Judging by the curly brackets in one of the lines, I figured the flag might be extracted from this. 
+Judging by the curly brackets in one of the lines, I figured the flag might be extracted from this.
 Upon closer inspection it becomes clear that every fifth character starting from the first A spells ALEXCTF, perhaps this correlation continues throughout? I wrote a python script to check.
 
 ```
@@ -37,4 +38,4 @@ for i in range(len(data)):
 print flag
 ```
 
-Sure enough the flag is returned **ALEXCTF{K33P_7H3_g00D_w0rk_up}**
+Sure enough the flag is returned: **ALEXCTF{K33P_7H3_g00D_w0rk_up}**.
